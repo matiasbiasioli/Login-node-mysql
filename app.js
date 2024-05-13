@@ -1,6 +1,10 @@
 //Invocar a Express
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Servidor corriendo en el puerto 'http://localhost:${port}/login'`);
+});
 
 //Seteamos urlencoded para capturar datos de form
 app.use(express.urlencoded({ extended: false }));
@@ -131,6 +135,8 @@ app.get('/logout', (req,res)=>{
 })
 
 //ESCUCHANDO PUERTO
-app.listen(3000, (req, res) => {
-    console.log('connection Succes at http://localhost:3000/login');
-})
+// app.listen(3000, (req, res) => {
+//     console.log('connection Succes at http://localhost:3000/login');
+// })
+
+

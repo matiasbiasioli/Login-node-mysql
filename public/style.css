@@ -88,4 +88,5 @@ input {
 }
 .btn_index_login:hover {
     background-color: white;
+    color: black;
 }
