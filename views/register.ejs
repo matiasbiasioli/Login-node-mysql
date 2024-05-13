@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register with node js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Form Registration</h1>
+    <div class="form_container">
+      <form action="register" method="post" class="form">
+        <div class="inputBox">
+          <label for="username">Username or Email</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="inputBox">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="inputBox">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="btn_register_container">
+          <button type="submit" value="Save" class="btn_save">Save</button>
+          <a href="./login"></a><button  class="btn_cancel">Cancel</button></a>
+        </div>
+      </form>
+    </div>
+  </body>
+  <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <% if(typeof alert != "undefined") { %>
+  <script>
+    Swal.fire({
+      title: '<%= title %>',
+      text: '<%= text %>',
+      icon: '<%= icon %>',
+      showConfirmButton: '<%= showConfirmButton %>',
+      timer: '<%= timer %>'
+    }).then(()=>{
+      window.location = '<%= ruta %>';
+    })
+    </script>
+    <% } %>
+</html>

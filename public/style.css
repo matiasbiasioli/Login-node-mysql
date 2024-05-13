@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightskyblue;
+    width: 100vw;
+    height: 100vh;
+}
+h1, h2 {
+    margin-top: 1rem;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.form_container {
+    margin: auto;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 20vw;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: .5rem;
+    width: 20vw;
+}
+.btn_login {
+    background-color: darkorchid;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+}
+.btn_register {
+    background-color: darkblue;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+}
+.inputBox {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: .5rem;
+}
+.btn_register_container {
+    display: flex;
+    gap: .3rem;
+}
+.btn_save {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: .5rem;
+    width: 50%;
+    cursor: pointer;
+}
+.btn_cancel {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    padding: .5rem;
+    width: 50%;
+    cursor: pointer;
+}
+.btn_index_login {
+    width: 8vw;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    text-align: center;
+    padding: .5rem 1rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn_index_login:hover {
+    background-color: white;
+}

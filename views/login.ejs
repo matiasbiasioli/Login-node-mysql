@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login with node js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Login with Node js</h1>
+    <div class="form_container">
+      <form action="auth" method="post" class="form" >
+        <div class="inputBox">
+          <input type="text" id="userName" name="username" placeholder="Username" />
+        </div>
+        <div class="inputBox">
+          <input type="password" id="password" name="password" placeholder="Password"/>
+        </div>
+        <div>
+          <button type="submit" value="Login" class="btn_login">Login</button>
+        </div>
+      </form>
+      <div>
+        <a href="register" ><button class="btn_register">Register</button></a>
+      </div>
+    </div>
+  </body>
+  <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <% if(typeof alert != "undefined") { %>
+  <script>
+    Swal.fire({
+      title: '<%= title %>',
+      text: '<%= text %>',
+      icon: '<%= icon %>',
+      showConfirmButton: '<%= showConfirmButton %>',
+      timer: '<%= timer %>'
+    }).then(()=>{
+      window.location = '<%= ruta %>';
+    })
+    </script>
+    <% } %>
+</html>
